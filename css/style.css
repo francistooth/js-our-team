@@ -1,0 +1,21 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* container bg */
+
+body {
+   background-color: #f5f5f1;
+}
+
+/* card info  */
+
+.info {
+   color: #a09c97;
+}
+
+.card-w {
+   width: 18rem;
+}
