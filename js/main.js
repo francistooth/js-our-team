@@ -41,7 +41,39 @@ const team = [
 ];
 
 for (let i = 0; i < team.length; i++) {
-   for (let j = 0; j < 3; j++) {
-      
-   }
+   // creo la card
+
+   const card = document.createElement("div");
+   card.classList.add("card-w", "card");
+   
+   // creo l'immagine
+
+   const img = document.createElement("img");
+   img.classList.add("card-img-top")
+   img.src = team[i].img;
+   img.alt = team[i].name;
+   card.appendChild(img);
+
+   // creo il div per il testo
+
+   const text = document.createElement("div");
+   text.classList.add("text-center", "card-body");
+
+   // creo l'h5 per il nome
+
+   const h5 = document.createElement("h5");
+   h5.classList.add("info");
+   h5.innerHTML = team[i].name;
+   text.appendChild(h5);
+
+   // creo il paragrafo
+
+   const para = document.createElement("p");
+   para.classList.add("info");
+   para.innerHTML = team[i].role;
+   text.appendChild(para);
+
+   card.appendChild(text);
+
+   container.appendChild(card);
 }
